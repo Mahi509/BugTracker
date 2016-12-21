@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+	http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<security:http auto-config="true" use-expressions="true">
+		<security:intercept-url pattern="/" access="permitAll" />
+		<intercept-url pattern="/adminClient/**" access="hasRole('ROLE_ADMIN')" />
+
+		<security:form-login login-page="/login/loadAdminPage"
+			login-processing-url="/login/loginAdmin" authentication-failure-url="/login/loadAdminPage?authfailed"
+			authentication-success-handler-ref="customUrlAuthenticationSuccessHandler"
+			always-use-default-target="false" />
+
+		<security:logout invalidate-session="true" logout-url="/logout"
+			logout-success-url="/?logout1" />
+		<http-basic />
+		<!-- username-parameter="j_username" password-parameter="j_password" -->
+
+	</security:http>
+	<global-method-security pre-post-annotations="enabled"></global-method-security>
+	<beans:bean id="customUrlAuthenticationSuccessHandler"
+		class="com.bugtracker.extra.CustomUserSuccessClientHandler" />
+	<security:authentication-manager>
+		<security:authentication-provider
+			user-service-ref="customUserDetailsService1">
+			<security:password-encoder ref="bCryptPasswordEncoder"></security:password-encoder>
+		</security:authentication-provider>
+	</security:authentication-manager>
+	<beans:bean id="bCryptPasswordEncoder"
+		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+		<!-- <beans:constructor-arg name="strength" value="10"></beans:constructor-arg> -->
+	</beans:bean>
+
+	<beans:bean id="customUserDetailsService1"
+		class="com.bugtracker.extra.CustomUserDetailsClientService" />
+</beans:beans>

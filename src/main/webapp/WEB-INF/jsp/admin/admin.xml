@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="adminHome" extends="base.defination.admin">
+		<put-attribute name="title" value="Admin Home Page" />
+		<put-attribute name="header" value="/WEB-INF/jsp/admin/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/adminHome.jsp" />
+	</definition>
+	<definition name="bugDetails" extends="base.defination.admin">
+		<put-attribute name="title" value="Admin Home Page" />
+		<put-attribute name="header" value="/WEB-INF/jsp/admin/header.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/bugDetails.jsp" />
+	</definition>
+</tiles-definitions>

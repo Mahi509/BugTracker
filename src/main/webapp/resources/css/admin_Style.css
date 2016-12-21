@@ -1,0 +1,283 @@
+body {
+	background: none repeat scroll 0% 0% #D7D4CE;
+}
+
+#content {
+	width: 1004px;
+	height: auto;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.white_content {
+	width: 845px;
+	height: 100%;
+	float: left;
+	border-radius: 5px;
+	background-color: #fff;
+	margin: 0 0 0 15px;
+	padding: 0 0 50px 0;
+}
+
+.txt_hdr_forms {
+	width: 100%;
+	color: #63351b;
+	font-size: 26px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	margin: 0;
+	padding: 30px 0 0 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.content_divider_forms {
+	background-color: #e1e1e0;
+	height: 1px;
+	width: 810px;
+	margin: 15px 0 25px 18px;
+}
+
+.register_panel {
+	float: left;
+	width: 354px;
+	height: 315px;
+	margin: 10px 0 0 34px;
+	padding: 0;
+	border: 1px solid #cccccc;
+}
+
+.register_panel input {
+	width: 318px;
+	height: 22px;
+	border: 1px solid #ccc;
+	margin: 0 0 0 12px;
+}
+
+.login_bg {
+	background: url("../images/adminPageImages/login_bg.png") no-repeat
+		scroll 0 0 rgba(0, 0, 0, 0);
+	height: 58px;
+	margin: 0 0 0 -11px;
+	padding: 0;
+	width: 376px;
+}
+
+.login_bg h1 {
+	color: #fff;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 30px;
+	margin: 0;
+	padding: 12px 0 0 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+label {
+	width: 318px;
+	float: left;
+	text-align: left;
+	margin-left: 12px;
+}
+
+fieldset {
+	color: #000000;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 24px;
+	margin: 0;
+	border: 0;
+}
+/* fieldset .login {
+	color: #000000;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 24px;
+} */
+.button_panel {
+	width: 318px;
+	float: left;
+	height: 34px;
+	padding: 0;
+	margin: 15px 0 0 18px;
+}
+
+.save_cont {
+	background: url("../images/adminPageImages/save_bt.gif") no-repeat
+		scroll 0 0 transparent;
+	float: left;
+	height: 34px;
+	margin: 0 10px 0 14px;
+	text-align: center;
+	width: 124px;
+}
+
+.save_cont input {
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+	color: #FFFFFF;
+	float: left;
+	font-size: 13px;
+	height: 34px;
+	line-height: 36px;
+	margin: 0;
+	text-align: center;
+	text-indent: 15px;
+	width: 124px;
+}
+
+.save_cont a {
+	color: #fff;
+	font-size: 12px;
+	font-weight: normal;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+.save_cont a:hover {
+	color: #bfa876;
+	text-decoration: none;
+}
+
+.not_register_panel {
+	float: left;
+	width: 354px;
+	height: 315px;
+	margin: 10px 0 0 53px;
+	padding: 0;
+	border: 1px solid #cccccc;
+}
+
+.not_register_panel p {
+	color: #554f4f;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	margin: 0;
+	padding: 12px 0 58px 18px;
+	font-weight: normal;
+}
+
+.txt_hdr_forms {
+	width: 100%;
+	color: #63351b;
+	font-size: 26px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	margin: 0;
+	padding: 30px 0 0 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.small_txt {
+	color: #000;
+	font-size: 11px;
+	font-style: italic;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	margin: 0;
+	padding: 2px 0px 5px 24px;
+}
+
+fieldset .login_pg {
+	color: #000000;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 24px;
+	width: 270px;
+}
+
+/* label .login_pg {
+	width: 270px;
+	float: left;
+	text-align: right;
+	margin-left: 12px;
+	display: block;
+} */
+.login_pg input {
+	width: 270px;
+	height: 22px;
+	border: 1px solid #ccc;
+	margin: 0 0 8px 12px;
+}
+
+.login_pg select {
+	width: 272px;
+	height: 22px;
+	border: 1px solid #ccc;
+	margin: 0 0 8px 12px;
+	padding: 2px 0 0 0;
+}
+
+.content_divider_forms {
+	background-color: #e1e1e0;
+	height: 1px;
+	width: 810px;
+	margin: 15px 0 25px 18px;
+	color: #63351B;
+	margin-top: 25px;
+}
+
+}
+.red_mark {
+	color: #fa0701;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	margin: 0;
+	padding: 0 0 5px 2px;
+}
+
+.adminLogo {
+	color: #63351B;
+	font-size: 20px;
+	margin-left: 20px;
+}
+/* --------------------------------------------------------------------------------------- */
+.inner {
+	width: 650px;
+	margin-top: 15px;
+	margin-left: 100px;
+}
+.inner2{
+margin-left: 800px;
+margin-bottom: 150px;
+	
+}
+.inner label {
+	display: inline-block;
+	padding-right: 5px;
+	width: 150px;
+	text-align: right;
+	color: #4CAF50;
+	width: 150px;
+	text-align: right;
+}
+
+/* .inner1 {
+	width: 350px;
+	background-color: #fff; color : #4CAF50;
+
+	color: #4CAF50;
+} */
+/* #hiddenDiv {
+	display: block;
+	margin-top: 99px;
+	float: left;
+	margin-left: -5px;
+} */
+
+.search_students {
+	float: right;
+	margin-right: 450px;
+	margin-bottom: 500px;
+}

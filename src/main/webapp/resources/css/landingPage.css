@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+
+#lp1 {
+	background: none repeat scroll 0% 0% #D7D4CE;
+}
+
+/* header css on home page */
+.header {
+	height: 90px;
+	background: #FFA500;
+	border: 1px solid #CCC;
+	width: 1600px;
+}
+
+/* ----------------- */
+body {
+	padding: 0px;
+	margin: 0px;
+	color: #5E5E5E;
+	font: 13px/18px Arial, Helvetica, sans-serif;
+}
+
+div, p, ul, h2, h3, img {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.selBox {
+	width: 200px;
+	height: 25px;
+}
+
+#headerupLinks {
+	color: #4F4F4F;
+	margin-left: 1100px;
+}
+
+.align12 {
+	margin-left: 15px;
+}
+
+.align12 h5 {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+
+form#form21 td label.error {
+	float: right;
+	color:red;
+}
+
+.login-field label {
+	width: 180px;
+}
+
+.login-field input {
+	width: 301px;
+}
+
+.login-field {
+	margin-bottom: 5px;
+	width: auto;
+	float: left;
+}
+
+.login-field label.error {
+	width: auto;
+	float: right;
+	color:red;
+}
+
+.login-field1 {
+	width: 100%;
+	margin-top: 25px;
+	float: left;
+	margin-left: 114px;
+}
